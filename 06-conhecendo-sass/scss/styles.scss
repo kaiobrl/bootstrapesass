@@ -1,0 +1,23 @@
+$color-dark: #232323;
+$color-light: #fafafa;
+$color-primary: #5f4fff;
+$color-secondary: #ff9f00;
+$color-success: #3eff73;
+$color-danger: #ff3e3e;
+
+$spacing-xs: .5rem;
+$spacing-sm: 1rem;
+$spacing-md: 3rem;
+$spacing-lg: 5rem;
+
+$font-sans: sans-serif;
+
+body {
+    background-color: $color-dark;
+    color: $color-light;
+    font-family: $font-sans;
+}
+
+p {
+    margin-top: $spacing-sm;
+}
