@@ -12,4 +12,11 @@ section {
   padding: 1rem;
 }
 
+.container {
+  padding: 1rem 5rem;
+}
+.container p {
+  margin-top: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
