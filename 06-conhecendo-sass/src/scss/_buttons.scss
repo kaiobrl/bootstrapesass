@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+@mixin background-with-hover($bg-color, $text-color) {
+    
+}
+
+.btn {
+    background-color: $color-light;
+    color: $color-dark;
+    border: none;
+    border-radius: .25rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: $spacing-xs $spacing-xs*1.5;
+    transition: .15s;
+
+    &:hor {
+        background-color: color.scale($color-light, $lightness: -50%);
+    }
+
+    &.btn-primary {
+        background-color: $color-primary;
+        color: $color-light;
+
+        &:hor {
+            background-color: color.scale($color-primary, $lightness: -20%);
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $color-secondary;
+    }
+
+    &.btn-success {
+        background-color: $color-success;
+    }
+
+    &.btn-danger {
+        background-color: $color-danger;
+    }
+}
